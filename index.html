@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
+</head>
+<body>
+
+    <div class="navigation">
+        <p><img src="images/header-img.png"> Panel UI</p>
+        <h1>Panel UI Demo</h1>
+    </div>
+
+    <div class="bg_color">
+        <div class="custom-container">
+            <div class="custom-row">
+                <div class="custom-col-md-10">
+                    <p class="paragraph">
+                        <b>Panel UI</b> is a web framework that enables the display of content in 
+                        a modal sidebar (panel) or a split view. Panel UI is easy to use—just
+                        add a data attribute to regular links. This makes it simple to transform 
+                        standard websites into dynamic user interfaces, supporting tasks that require
+                        single views, multi-step workflows, or side-by-side comparisons. Panel UI helps
+                        provide an intuitive user experience for complex tasks.
+                    </p>
+
+                    <h6 class="custom-h6">Containers</h6>
+                    <p class="paragraph">
+                        In the Panel UI framework there are three content containers.
+                    </p>
+
+                    <h3 class="row-alignment padding-top h3-custom">
+                        <img src="images/full-screen.svg"> 
+                        <span>Panel UI</span>
+                    </h3>
+                    <p class="data-attr">Data attribute: none</p>
+                    <p class="paragraph p-custom-color">
+                        In Panel UI, the default browser display of content is referred to as Full Screen. 
+                        Links with no data attribute retain the default browser behavior of the new content
+                        fully replacing the previous content. Panel UI offers multiple ways a user can transition 
+                        the view of content from a Panel or Split View to Full Screen.
+                    </p>
+
+                    <h4 class="use-cases">Use Cases</h4>
+                    <ul class="use-case-li">
+                        <li>Links within text, e.g. help text, paragraph text</li>
+                        <li>Pointers to other web pages</li>
+                        <li>Pointers to views that are lists of objects</li>
+                    </ul>
+
+                    <h4 class="use-cases">Examples</h4>
+                    <ul class="custom-ancher custom-border">
+                        <li><a href="#">List</a></li>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Form</a></li>
+                    </ul>
+
+                    <h3 class="row-alignment padding-top h3-custom">
+                        <img src="images/panel.svg"> 
+                        <span>Panel</span>
+                    </h3>
+                    <p class="data-attr">Data Attribute: data-panel-open</p>
+                    <p class="paragraph p-custom-color">
+                        Links with the attribute data-panel-open present
+                        their content in a modal sidebar, or panel, that slides in from the right of the
+                        current view. While a panel is shown the background content is not interactive
+                        but remains visible to maintain the context of the current task. An open panel
+                        can be expanded into a Full Screen view by selecting the Full Screen action in
+                        the panel header.
+                    </p>
+
+                    <h4 class="use-cases">Use Cases</h4>
+                    <p class="paragraph p-custom-color">
+                        Use Case The best use for a panel is to offer quick looks at data and allow the user to perform simple tasks like object creation.
+                    </p>
+                    <ul class="use-case-li">
+                        <li>Pointers to objects</li>
+                        <li>Object creation actions</li>
+                        <li>Object editing actions</li>
+                    </ul>
+
+                    <h4 class="use-cases">Examples</h4>
+                    <ul class="custom-ancher custom-border">
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>List</span>
+                                <img src="images/panel-open.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Item 1</span>
+                                <img src="images/panel-open.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Item 2</span>
+                                <img src="images/panel-open.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Form</span>
+                                <img src="images/panel-open.svg">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h3 class="row-alignment padding-top h3-custom">
+                        <img src="images/split-view.svg"> 
+                        <span>Split View</span>
+                    </h3>
+                    <p class="data-attr">Data attribute: data-splitview-open</p>
+                    <p class="paragraph p-custom-color">
+                        Links with the attribute data-splitview-open cause the view to be split in half, with
+                        the current content being presented on the left and the new content on the right. Both sides of the screen are interactive.
+                        In a split view, all links behave like the browser default, no matter the data attribute associated with them.
+                    </p>
+
+                    <h4 class="use-cases">Use Cases</h4>
+                    <p class="paragraph p-custom-color">
+                        The best use for a split view is for complex tasks that involve comparing or translating data from one view to another.
+                    </p>
+                    <ul class="use-case-li">
+                        <li>Tabs (Split View enables users to easily compare the content of two tabs side-by-side)</li>
+                    </ul>
+
+                    <h4 class="use-cases">Examples</h4>
+                    <ul class="custom-ancher custom-border">
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>List</span>
+                                <img src="images/full-split-view.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Item 1</span>
+                                <img src="images/full-split-view.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Item 2</span>
+                                <img src="images/full-split-view.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row-alignment space-between" href="#">
+                                <span>Form</span>
+                                <img src="images/full-split-view.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="custom-col-md-2">
+                    <h4>Reference Links</h4>
+                    <ul class="custom-ancher">
+                        <li><a href="#">Source Code</a></li>
+                        <li><a href="#">Specification</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

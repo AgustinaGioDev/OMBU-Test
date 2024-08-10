@@ -1,0 +1,210 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+.navigation{
+   padding: 24px 72px;
+   border-bottom: 1px solid gray;
+}
+.navigation p {
+    color: #44545F;
+    font-size: 19.18px;
+    font-weight: 300;
+    line-height: 24.11px;
+}
+.navigation h1 {
+    color: #2B353B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.bg_color {
+    background: #fbfbfb;
+    padding: 50px 0px;
+}
+.custom-col-md-2 {
+    flex-basis: 25%;
+}
+.custom-container{
+  width: 85%;
+  margin: 0 auto;
+}
+p.paragraph {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.custom-row {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-col-md-10 {
+    padding-right: 80px;
+}
+ul.custom-ancher {
+    padding: 0px;
+    list-style-type: none;
+}
+.custom-ancher li a {
+    color: #0086B2;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+.custom-h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #2B353B;
+    margin-bottom: 0px;
+}
+.row-alignment {
+    display: flex;
+    align-items: center;
+}
+.padding-top {
+    padding-top: 40px;
+}
+.h3-custom {
+    cursor: pointer;
+}
+.h3-custom span {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 10px;
+}
+p.dat-attr {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 18px;
+}
+.p-custom-color {
+    color: #2B353B;
+}
+.use-cases {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;   
+    color: #2B353B;
+}
+ul.use-case-li li {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.custom-border {
+    width: 128px;
+    border: 1px solid #C3D1DA;
+    border-radius: 10px;
+    padding: 20px !important;
+}
+.custom-border li {
+    padding: 4px;
+}
+a.row-alignment span {
+    padding-right: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 20px 40px;
+    }
+
+    .custom-col-md-10 {
+        padding-right: 40px;
+    }
+
+    .custom-container {
+        width: 90%;
+    }
+
+    .custom-col-md-2 {
+        flex-basis: 30%;
+    }
+
+    .h3-custom span {
+        font-size: 16px;
+    }
+
+    p.paragraph, .custom-ancher li a, ul.use-case-li li {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (480px to 767px) */
+@media (max-width: 767px) {
+    .navigation {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .custom-col-md-2 {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    .custom-row {
+        flex-direction: column;
+    }
+
+    .custom-container {
+        width: 95%;
+    }
+
+    .custom-col-md-10 {
+        padding-right: 0;
+    }
+
+    .h3-custom span, p.paragraph, .custom-ancher li a, ul.use-case-li li {
+        font-size: 15px;
+    }
+
+    .custom-h6 {
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile Devices (up to 479px) */
+@media (max-width: 479px) {
+    .navigation p {
+        font-size: 18px;
+    }
+    .bg_color {
+        padding: 20px 0px;
+    }
+    .navigation h1 {
+        font-size: 22px;
+    }
+
+    .custom-container {
+        width: 100%;
+    }
+    .custom-row {
+        padding: 0px 30px;
+    }
+
+    .custom-h6 {
+        font-size: 16px;
+    }
+
+    p.paragraph, .custom-ancher li a, ul.use-case-li li {
+        font-size: 14px;
+    }
+
+    .h3-custom span {
+        font-size: 14px;
+    }
+
+    .custom-border {
+        width: 80%;
+        padding: 10px !important;
+    }
+}
