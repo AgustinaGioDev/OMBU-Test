@@ -1,39 +1,39 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var menuItems = document.querySelectorAll('.custom-border li a');
-    var slideInContent = document.getElementById('slide-in-content');
-    var closeButton = document.getElementById('close-button');
+document.addEventListener('DOMContentLoaded', function() {
+    var slider = document.querySelector('.slider');
+    var closeBtn = slider.querySelector('.close-btn');
 
-    // Show slide-in content when a menu item is clicked
-    menuItems.forEach(function (item) {
-        item.addEventListener('click', function (e) {
+    // Function to hide the slider
+    function hideSlider() {
+        slider.classList.remove('show');
+        setTimeout(function() {
+            slider.style.display = 'none';
+        }, 500);
+    }
+
+    // Show slider on anchor click
+    document.querySelectorAll('.custom-ancher a').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            slideInContent.classList.add('show');
-            slideInContent.classList.remove('fade-out');
+
+            var heading = this.textContent;
+            slider.querySelector('h2').textContent = heading;
+
+            slider.style.display = 'block';
+            setTimeout(function() {
+                slider.classList.add('show');
+            }, 10);
         });
     });
 
-    // Close slide-in content when the close button is clicked
-    closeButton.addEventListener('click', function () {
-        slideInContent.classList.add('fade-out');
-        setTimeout(function() {
-            slideInContent.classList.remove('show');
-            slideInContent.classList.remove('fade-out');
-        }, 300); // Match the duration of the CSS transition
+    // Hide slider when close button is clicked
+    closeBtn.addEventListener('click', function() {
+        hideSlider();
     });
 
-    // Close slide-in content when clicking outside
-    document.addEventListener('click', function (e) {
-        if (!slideInContent.contains(e.target) && !e.target.closest('.custom-border')) {
-            slideInContent.classList.add('fade-out');
-            setTimeout(function() {
-                slideInContent.classList.remove('show');
-                slideInContent.classList.remove('fade-out');
-            }, 300); // Match the duration of the CSS transition
+    // Hide slider when clicking anywhere outside of it
+    document.addEventListener('click', function(e) {
+        if (!slider.contains(e.target) && !e.target.closest('.custom-ancher')) {
+            hideSlider();
         }
-    });
-
-    // Prevent body click event when clicking inside the slide-in content
-    slideInContent.addEventListener('click', function (e) {
-        e.stopPropagation();
     });
 });

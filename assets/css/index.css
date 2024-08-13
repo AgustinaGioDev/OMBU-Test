@@ -109,6 +109,28 @@ ul.use-case-li li {
 a.row-alignment span {
     padding-right: 15px;
 }
+.d-flex-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-bottom: 1px solid #C3D1DA;
+}
+.slider.show p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 40px;
+}
+.bottom-style {
+    background: white;
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    bottom: 0px;
+}
 
 /* Media Queries for Responsiveness */
 
@@ -137,6 +159,41 @@ a.row-alignment span {
     p.paragraph, .custom-ancher li a, ul.use-case-li li {
         font-size: 16px;
     }
+}
+
+/* Sidebar */
+.slider {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 704px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 1s ease;
+}
+.slider.show {
+    right: 0;
+}
+.slider h2 {
+    margin: 0;
+}
+.slider .close-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .close-btn img{
+    width: 20px;
+    height: 20px;
 }
 
 /* Mobile Devices (480px to 767px) */
@@ -169,6 +226,19 @@ a.row-alignment span {
 
     .custom-h6 {
         font-size: 18px;
+    }
+    .slider {
+        width: 80%; 
+        padding: 40px 15px;
+    }
+
+    .slider h2 {
+        font-size: 1.3em; 
+    }
+
+    .slider .close-btn {
+        padding: 5px 8px;
+        font-size: 0.9em; 
     }
 }
 
@@ -207,4 +277,18 @@ a.row-alignment span {
         width: 80%;
         padding: 10px !important;
     }
+    .slider {
+        width: 280px; 
+        padding: 30px 10px;
+    }
+
+    .slider h2 {
+        font-size: 1.2em; 
+    }
+
+    .slider .close-btn {
+        padding: 4px 6px;
+        font-size: 0.8em; 
+    }
 }
+
